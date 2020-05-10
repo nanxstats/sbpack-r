@@ -1,0 +1,30 @@
+Package: sbpack
+Type: Package
+Title: Pack and Upload CWL Apps to Seven Bridges Powered Platforms
+Version: 0.1.0
+Authors@R: c(
+    person("Nan", "Xiao", email = "nan.xiao@sevenbridges.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0250-5673")),
+    person("Kaushik", "Ghose", email = "kaushik.ghose@sevenbridges.com", role = c("aut"),
+           comment = c(ORCID = "0000-0003-2933-1260")),
+    person("Seven Bridges Genomics", role = c("cph", "fnd"))
+    )
+Maintainer: Nan Xiao <nan.xiao@sevenbridges.com>
+Description: An R wrapper for the Python package 'sbpack'.
+    Packs and uploads CWL apps to Seven Bridges powered platforms.
+    Resolves linked processes, schemadefs, $include, and $import.
+License: AGPL-3
+SystemRequirements: Python (>= 3.6.0), sbpack (>= 2020.03.13).
+    Detailed installation instructions can be found in the README file.
+VignetteBuilder: knitr
+URL: https://nanx.me/sbpack-r/, https://github.com/nanxstats/sbpack-r
+BugReports: https://github.com/nanxstats/sbpack-r/issues
+Encoding: UTF-8
+LazyData: true
+Imports:
+    reticulate,
+    magrittr
+Suggests:
+    knitr,
+    rmarkdown
+RoxygenNote: 7.1.0
