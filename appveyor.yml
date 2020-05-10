@@ -19,10 +19,17 @@ environment:
   # see https://github.com/krlmlr/r-appveyor#readme for details
   # USE_RTOOLS: true
   # R_REMOTES_STANDALONE: true
+  USE_RTOOLS: true
+  PATH: "%PATH%;C:\\MinGW\\bin;C:\\MinGW\\msys\\1.0;C:\\MinGW\\msys\\1.0\\bin"
+  matrix:
+    - PYTHON: "C:\\Python36"
+      RETICULATE_PYTHON: "C:\\Python36"
 
 # Adapt as necessary starting from here
 
 build_script:
+  - "%PYTHON%\\python.exe -m pip install setuptools numpy"
+  - "%PYTHON%\\python.exe -m pip install git+https://github.com/rabix/sbpack"
   - travis-tool.sh install_deps
 
 test_script:
