@@ -34,7 +34,7 @@ library("sbpack")
 
 ## Developers
 
-If you have already installed Python and sbpack, and want to develop sbpack-r in RStudio, simply open `.Rprofile`, change the Python binary path to the one on you want to use (the default here is Homebrew Python 3):
+If you have already installed Python and sbpack, and want to develop sbpack-r in RStudio, simply create a file `.Rprofile` under the package directory and set the Python binary path (Homebrew Python 3 path example below):
 
 ```r
 Sys.setenv(RETICULATE_PYTHON = "/usr/local/bin/python3")
