@@ -75,7 +75,6 @@
 <div id="sbpack-r" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#sbpack-r" class="anchor"></a>sbpack-r</h1></div>
-
 <p>sbpack-r is an R wrapper offering a functional interface for the Python package <a href="https://github.com/rabix/sbpack">sbpack</a>, which supports packing local or remote <a href="https://www.commonwl.org/">Common Workflow Language</a> (CWL) apps and uploading them to Seven Bridges powered platforms.</p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
@@ -100,7 +99,7 @@
 <div id="developers" class="section level2">
 <h2 class="hasAnchor">
 <a href="#developers" class="anchor"></a>Developers</h2>
-<p>If you have already installed Python and sbpack, and want to develop sbpack-r in RStudio, simply open <code>.Rprofile</code>, change the Python binary path to the one on you want to use (the default here is Homebrew Python 3):</p>
+<p>If you have already installed Python and sbpack, and want to develop sbpack-r in RStudio, simply create a file <code>.Rprofile</code> under the package directory and set the Python binary path (Homebrew Python 3 path example below):</p>
 <div class="sourceCode" id="cb4"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/Sys.setenv.html">Sys.setenv</a></span>(<span class="kw">RETICULATE_PYTHON</span> <span class="kw">=</span> <span class="st">"/usr/local/bin/python3"</span>)</pre></div>
 <p>The next time you open the project, the correct Python path and library path should be already set. For more technical details, see <a href="https://rstudio.github.io/reticulate/articles/versions.html">reticulate Python version configuration</a>.</p>
 </div>
@@ -138,14 +137,7 @@
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
-<ul class="list-unstyled">
-<li><a href="https://travis-ci.org/nanxstats/sbpack-r"><img src="https://travis-ci.org/nanxstats/sbpack-r.svg?branch=master" alt="Travis build status"></a></li>
-<li><a href="https://ci.appveyor.com/project/nanxstats/sbpack-r"><img src="https://ci.appveyor.com/api/projects/status/zzzzzzzzzzz/branch/master?svg=true" alt="AppVeyor build status"></a></li>
-</ul>
-</div>
-</div>
+  </div>
 </div>
 
 
