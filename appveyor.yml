@@ -8,8 +8,8 @@ environment:
   R_ARCH: x64
   NOT_CRAN: true
   USE_RTOOLS: true
-  PYTHON: "C:\\Python37"
-  RETICULATE_PYTHON: "C:\\Python37"
+  PYTHON: "C:\\Python37-x64"
+  RETICULATE_PYTHON: "C:\\Python37-x64"
 
 # Download script file from GitHub
 init:
