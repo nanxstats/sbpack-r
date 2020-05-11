@@ -1,6 +1,6 @@
 # sbpack-r
 
-[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/nanxstats/sbpack-r?branch=master&svg=true)](https://ci.appveyor.com/project/nanxstats/sbpack-r)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
 sbpack-r is an R wrapper offering a functional interface for the Python package [sbpack](https://github.com/rabix/sbpack), which supports packing local or remote [Common Workflow Language](https://www.commonwl.org/) (CWL) apps and uploading them to Seven Bridges powered platforms.
 
